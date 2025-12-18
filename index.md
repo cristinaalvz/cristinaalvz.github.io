@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="right-block">
+<div class="left-block">
 
 ==============
 Independent data analyst  

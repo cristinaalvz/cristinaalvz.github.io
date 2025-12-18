@@ -1,0 +1,65 @@
+---
+---
+
+/* import the selected GitHub Pages theme styles */
+@import "{{ site.theme }}";
+
+/* === Global terminal look === */
+body {
+  background-color: #000000;        /* black background */
+  color: #00ff55;                   /* green text */
+  font-family: "VT323", "Fira Mono", "Courier New", monospace;
+  text-shadow: 0 0 4px rgba(0, 255, 100, 0.6); /* glow */
+}
+
+/* links a bit brighter green */
+a {
+  color: #5cffb5;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* center main content for a “screen” feel */
+.site-title,
+.site-header,
+.site-footer,
+.wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* code blocks and inline code look like terminal output */
+pre,
+code {
+  background: transparent;
+  color: #00ff55;
+  font-family: "VT323", "Fira Mono", "Courier New", monospace;
+  text-shadow: 0 0 3px rgba(0, 255, 100, 0.4);
+  border-radius: 0;
+}
+
+/* optional: dim headings slightly so content lines pop more */
+h1, h2, h3, h4, h5, h6 {
+  color: #7bffb5;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* optional: subtle scanline overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.35) 50%
+  );
+  background-size: 100% 4px;
+  opacity: 0.25;
+}

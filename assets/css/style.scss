@@ -2,27 +2,18 @@
 ---
 @import "{{ site.theme }}";
 
-/* make the main content area align to the right */
-.wrapper,
-.site-wrapper,
-.page-content,
-.page,
-body {
-  text-align: right;
-}
-
-/* add space at the top */
-body {
-  margin-top: 140px;   /* tweak this number */
-}
-
-
 /* === Global retro look, black on white === */
 body {
   background-color: #ffffff;        /* white background */
   color: #000000;                   /* black text */
   font-family: "VT323", "Fira Mono", "Courier New", monospace;
   text-shadow: none;                /* no glow */
+}
+
+/* right-aligned text block with extra top space */
+.right-block {
+  text-align: right;
+  margin-top: 140px;   /* tweak this number */
 }
 
 /* links: simple underline, still black */
@@ -34,7 +25,7 @@ a:hover {
   text-decoration: none;
 }
 
-/* center main content for a “screen” frame */
+/* center the “screen” frame but let text align right inside .right-block */
 .site-title,
 .site-header,
 .site-footer,
@@ -60,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.08em;
 }
 
- /*hiding the github link*/
+/* hiding the github link */
 .footer,
 .site-footer {
   display: none;

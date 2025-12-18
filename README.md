@@ -8,7 +8,7 @@ The site is built with GitHub Pages and Jekyll and uses custom CSS for a simple,
 
 - `index.md` – main homepage content.
 - `_config.yml` – site configuration (theme, title, settings).
-- `assets/css/style.scss` – custom styles for fonts, layout, and spacing.
+- `assets/css/style.scss` – custom styles for fonts, layout, and spacing. 
 
 
 
